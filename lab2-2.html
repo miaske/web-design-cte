@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ashley Kerwood</title>
+
+<style type="text/css">
+.text {
+    background-color: #beec6a;
+    color: #009;
+    font-family: Arial;
+    font-size: 14pt;
+    border: solid #009 1px;
+    border-radius: 5px;
+}
+.button {
+    background-color: #900;
+    color: white;
+    font-family: Arial;
+    border: solid #600 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.center {text-align:center}
+body {
+    background-color: #37da7e;
+    color: #009;
+    font-family: Arial;
+}
+header {
+    width: 600px;
+    height:60px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #007633;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+h1 {line-height: 50px}
+section {
+    width: 800px;
+    min-height: 300px;
+    margin: auto;
+    background-color: #62da97;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+table {
+    width: 800px;
+    margin: auto;
+}
+td {text-align: left;}
+</style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Course Registration Form</h1>
+    </header>
+
+    <section>
+        <form method="POST" action="http://www.ieclass.com/jslabs/lab2-2.php">
+            <table>
+                <tr>
+                    <td>Term:</td>
+                    <td><input type="radio" name="term" value="fall"/>Fall<input type="radio" name="term" value="spring"/>Spring</td>
+                    <td>Address Line 1:</td>
+                    <td><input class="text" type="text" name="address1" required/></td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input class="text"type="text" name="fname" required/></td>
+                    <td>Address Line 2:</td>
+                    <td><input class="text" type="text" name="address2" required /></td>
+                </tr>
+                <tr>
+                    <td>Middle Initial:</td>
+                    <td><input class="text" type="text" name="middle"/></td>
+                    <td>City:</td>
+                    <td><input type="text" class="text" name="city"required/></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input class="text" type="text" name="lname" required/></td>
+                    <td>State:</td>
+                    <td><input type="text" class="text" name="state" required/></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input class="text" type="text" name="phone" required/></td>
+                    <td>Zip Code:</td>
+                    <td><input class="text" type="text" size="5" name="zip" required/></td>
+                </tr>
+                <tr>
+                    <td>Work Phone:</td>
+                    <td><input class="text" type="text" name="work"/></td>
+                    <td>Email Address:</td>
+                    <td><input class="text" type="text" name="email" required/></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Select Courses you are interested in:</td>
+                </tr>
+                <tr>
+                    <td>English:</td>
+                    <td><input type="radio" name="english" value="English1"/>English 1</td>
+                    <td><input type="radio" name="english" value="English2"/>English 2</td>
+                    <td><input type="radio" name="english" value="English3"/>English 3</td>
+                </tr>
+                <tr>
+                    <td>History:</td>
+                    <td><input type="radio" name="history" value="History1"/>History 1</td>
+                    <td><input type="radio" name="history" value="History2"/>History 2</td>
+                    <td><input type="radio" name="history" value="History3"/>History 3</td>
+                </tr>
+                <tr>
+                    <td>Communications:</td>
+                    <td><input type="radio" name="comm" value="Speech1"/>Speech 1</td>
+                    <td><input type="radio" name="comm" value="Speech2"/>Speech 2</td>
+                    <td><input type="radio" name="comm" value="Public Speaking"/>Public Speaking</td>
+                </tr>
+                <tr>
+                    <td>Economics:</td>
+                    <td><input type="radio" name="eco" value="Macro Econ"/>Macro Econ</td>
+                    <td><input type="radio" name="eco" value="Micro Econ"/>Micro Econ</td>
+                    <td><input type="radio" name="eco" value="World Econ"/>World Econ</td>
+                </tr>
+                <tr>
+                    <td>Electives</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="accounting"/>Accounting</td>
+                    <td><input type="checkbox" name="child"/>Child Care</td>
+                    <td><input type="checkbox" name="cs"/>Computer Science</td>
+                    <td><input type="checkbox" name="crimonology"/>Criminology</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="earthscience"/>Earth Science</td>
+                    <td><input type="checkbox" name="education"/>Education</td>
+                    <td><input type="checkbox" name="film"/>Film</td>
+                    <td><input type="checkbox" name="arts"/>Fine Arts</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="geography"/>Geography</td>
+                    <td><input type="checkbox" name="health"/>Health Science</td>
+                    <td><input type="checkbox" name="humanities"/>Humanities</td>
+                    <td><input type="checkbox" name="law"/>Law</td>
+                </tr>
+                <tr>
+                    <td class="center" colspan="4"><input class="button" type="submit" value="Send Info"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="button" type="reset" value="Reset"/></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</body>
