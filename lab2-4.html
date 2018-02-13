@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ashley Kerwood</title>
+
+  <style>
+  .text {
+    background-color: #61d7a4;
+    color: #666;
+    font-family: "Arial";
+    font-size: 14pt;
+    border: solid black 1px;
+    border-radius: 10px;
+  }
+  .button {
+    background-color: #900;
+    color: white;
+    font-family: "Arial";
+    border: solid #600 2px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .center {
+    text-align: center;
+  }
+  body {
+    background-color: #a62f00;
+    font-family: "Arial";
+  }
+  header {
+    width: 600px;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #ff9b73;
+    text-align: center;
+    border-radius: 10px;
+    text: #a62f00;
+  }
+  h1 {line-height: 50px;}
+  option {background-color: #61d7a4;}
+  section {
+    width: 800px;
+    min-height: 100px;
+    margin: auto;
+    background-color: #bf5930;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  select {
+    background-color: #61d7a4;
+    border-radius: 5px;
+    font-size: 14pt;
+    border: solid black 1px;
+  }
+  table {
+    margin: auto;
+  }
+  td{text-align: left;}
+  </style>
+</head>
+
+<body>
+<header>
+<h1>Online Computer Survey</h1>
+</header>
+
+<section>
+  <form method="POST" action="http://www.ieclass.com/jslabs/lab2-4.php">
+    <input type="hidden" name="labcode" value="3287"/>
+    <table>
+      <tr>
+        <td>Your Name:</td><td><input class="text" type="text" name="sender"></input></td>
+        <td>Email:</td><td><input class="text" type="text" name="email"></input></td>
+      </tr>
+
+      <tr>
+        <td>What Processor do you use:</td><td><input type="radio" name="processor" value="Pentium">Pentium</input><input type="radio" name="processor" name="Mac">Mac</input><input type="radio" name="processor" name="AMD">AMD</input></td>
+        <td>What is the speed of your processor?</td><td><select name="speed"><option value="1Ghz">1Ghz</option><option value="1.2Ghz">1.2Ghz</option><option value="1.6Ghz"></option><option value="1.8Ghz"></option><option value="2.0Ghz">2.0Ghz</option><option value="2.2Ghz"></option></select></td>
+      </tr>
+
+      <tr>
+        <td colspan="4">What do you use your computer for?</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="wordProcessing">Word Processing</input><br>
+          <input type="checkbox" name="games">Games</input>
+        </td>
+        <td>
+          <input type="checkbox" name="internet">Internet</input><br>
+          <input type="checkbox" name="email">Email</input>
+        </td>
+        <td><input type="checkbox" name="research">Research</input><br>
+          <input type="checkbox" name="webDesign">Web Design</input>
+        </td>
+        <td>
+          <input type="checkbox" name="onlineBanking">Online Banking</input><br>
+          <input type="checkbox" name="other">Other</input>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">Do you plan on purchasing another computer any time soon?</td>
+        <td>
+          <select name="newcomp">
+            <option value="Yes" selected>Yes</option>
+            <option value="No">No</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">What peripherals do you have?</td>
+      </tr>
+      <tr>
+        <td><input name="scanner" type="checkbox">Scanner</input></td>
+        <td><input name="printer" type="checkbox">Printer</input></td>
+        <td><input name="camera" type="checkbox">Digital Camera</input></td>
+        <td><input name="flatScreen" type="checkbox">Flat Screen</input></td>
+      </tr>
+      <tr>
+        <td>Internet:</td>
+        <td><input name="internet" value="broadband" type="radio">Broadband</input></td>
+        <td><input name="internet" value="dialUp" type="radio">Dial Up</input></td>
+        <td><input name="internet" value="none" type="radio">None</input></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <textarea name="comments" class="text" cols="80" rows="5" placeholder="Additional Comments"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" class="center"><input type="submit" class="button" value="Submit Survey"></input>
+          &emsp;
+          <input type="reset" class="button" value="Clear Form"></input>
+        </td>
+      </tr>
+    </table>
+  </form>
+</section>
+</body>
+
+</html>
